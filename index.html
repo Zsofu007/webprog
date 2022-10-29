@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower the Electricity Bills Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+</head>
+
+<body>
+  
+        <div id="menu">
+            <h1>
+                Rezsicsökkentés<br>(Maradj átlagfogyasztás alatt)
+            </h1>
+            <form>
+                <label for="name1">Player's name: </label>
+                <input type="text" id="name1" placeholder="In Game Name" >
+                <label for="size">Board Size and Difficulty</label>
+                <select id="difficulty">
+                    <option value="e">7x7 Easy</option>
+                    <option value="h">7x7 Hard</option>
+                    <option value="x">10x10 Extreme</option>
+                </select>
+                
+                <input type="button" id="start" value="Start Game">
+            </form>
+
+            <hr>
+
+            <h1>Previous Games</h1>
+            <table class="games" id="prevGames">
+                <tbody id="prevGamesBody">
+                    <tr>
+                        <th>Name</th>
+                        <th>Time</th>
+                        <th>Board</th> 
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+
+            <h1>Saved Games</h1>
+            <table class="games" id="savedGames">
+                <tbody id="savedGamesBody">
+                    <tr>
+                        <th>Name</th>
+                        <th>Board</th>
+                        <th>Elapsed Time</th> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+  
+        <div id="game" hidden>
+            <h1 id="output"></h1>
+            <h2 id="time">Elapsed Time</h2>
+            <table id="gameBoard">
+                <tbody id="gameBoardBody"></tbody>
+            </table>
+            <input type="button" id="saveGame" value="Save Game">
+            <input type="button" id="restart" value="Back to Menu" hidden>
+            <input type="button" id="stop" value="Stop">
+            <input type="button" id="resume" value="Resume" hidden>
+
+        </div>
+    
+</body>
+<script type="module" src="main.js"></script>
+
+</html>

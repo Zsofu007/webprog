@@ -1,0 +1,312 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #312855;
+    color: white;
+    font-size: 1rem;
+    height: 100%;
+    
+    color: #8080ff;
+}
+
+
+
+.games,#gameBoard, #prevGames{
+    
+    margin: auto;
+    
+}
+
+#gameBoard, #gameBoard td {
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    min-width: 7vh;
+    height: 7vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    transition-duration: 0.2s;
+    -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+#menu{
+    margin-top: 60px;
+
+}
+#menu, #game {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    margin: auto;
+    height: auto;
+    width: 55vw;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #8080ff;
+    color: #312855;
+    
+}
+
+
+
+#game{
+    
+    height: auto;
+    width: 65vw;
+}
+
+#game > h1{
+    margin-top: 10px;
+    color:#312855;
+
+}
+
+form {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 10%;
+    
+}
+
+hr{
+    /*color:#312855;*/
+    width: 70%;
+    border: none;
+    height: 2px;
+    background: yellow;
+    
+}
+
+
+form > *{
+    margin-top: 20px;
+}
+
+form > label{
+    font-weight: bold;
+}
+
+
+/* _________GOMBOK___________ */
+form > #start{
+    max-width: 20vw;
+    min-width: 10vw;
+    font-size: 1rem;
+    font-weight: bold;
+    min-height: 7vh;
+    align-self: center;
+    margin-top: 6%;
+    margin-left: -10%;
+    background-color: #312855;
+    color: #fdea1c;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #312855;
+}
+
+form > #start:hover{
+    background-color: #fdea1c;
+    color: #312855;
+}
+
+#restart, #saveGame, #resume, #stop{
+    max-width: 20vw;
+    min-width: 10vw;
+    font-size: 1rem;
+    font-weight: bold;
+    min-height: 7vh;
+    align-self: center;
+    margin-top: 5%;
+    background-color: #312855;
+    color: #fdea1c;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #312855;
+}
+
+#resume:hover, #stop:hover,#restart:hover, #saveGame:hover{
+    background-color: #fdea1c;
+    color: #312855;
+}
+
+/* _________________________ */
+
+
+
+.games,.games th{
+    background-color: #312855;
+    
+    color:#8080ff;
+    width: 45vw;
+    border: 2px solid yellow;
+    border-collapse: collapse;
+    height: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 23px;
+    
+}
+
+.games th{
+    color:yellow;
+}
+
+.games td{
+    border: 2px solid yellow;
+    border-collapse: collapse;
+   /* color: #8080ff;*/
+}
+
+#savedGames tr:hover{
+    color: yellow;
+    background-color: #8080ff;
+}
+
+#time{
+    color:#312855;
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;    
+}
+
+input[type=text] , select {
+    background-color: #312855;
+    color:#8080ff;
+    border-radius: 5px;
+    width: 20vw;
+    margin-bottom: 20px;
+    height: 6vh;
+    
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+input[type=text] {
+    
+    width: 10vw;
+    transition: width 0.4s ease-in-out;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 6vh #312855 inset !important;
+    -webkit-text-fill-color: #8080ff !important;
+}
+  
+  
+  input[type=text]:focus {
+    width: 20vw;
+    background-color: #312855;
+    color:#8080ff;
+  }
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 10;
+}
+
+#bulb{
+    height:5vh;
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    #menu, #game {
+        
+        margin: auto;
+        width: auto;
+        height: auto;
+        
+    }
+
+    form > #start{
+        
+        min-width: 40vw;
+        height: 5vh;
+        font-size: 1rem;
+       
+    }
+   
+    .games,.games th{
+        
+        font-size: 12px;
+        
+        
+    }
+
+    .games{
+       width: 75vw;
+    }
+
+    input[type=text] , select {
+       
+        width: 40vw;
+       
+    }
+    
+    input[type=text] {
+        
+        width: 25vw;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 6vh #312855 inset !important;
+        -webkit-text-fill-color: #8080ff !important;
+    }
+      
+      
+      input[type=text]:focus {
+        width: 35vw;
+        background-color: #312855;
+        color:#8080ff;
+      }
+
+      #restart, #saveGame, #resume, #stop{
+        max-width: 40vw;
+        min-width: 20vw;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 5vh;
+        
+    }
+    
+    #resume:hover, #stop:hover,#restart:hover, #saveGame:hover{
+        background-color: #fdea1c;
+        color: #312855;
+    }
+
+    #gameBoard, #gameBoard td {
+
+        min-width: 8vw;
+        height: 8vw;
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        
+    }
+
+    #bulb{
+        height:6vw;
+        width: auto;
+    }
+  }
